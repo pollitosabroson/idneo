@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import os
+
 from fabric.api import cd, env, require, run, task
 from fabric.colors import green, white
 from fabric.context_managers import contextmanager, shell_env
@@ -34,6 +36,7 @@ def environment(env_name):
         env.key_filename = result.split()[1].replace('"', '')
 
     set_env_from_json_file('environments.json', env_name)
+    env.env_name = env_name
 
 
 @task
@@ -110,6 +113,22 @@ def runserver():
     """
     with virtualenv():
         run('python manage.py runserver_plus 0.0.0.0:8000')
+
+
+@task
+def pip_install(upgrade=False):
+    """
+    Installs the python dependencies specified in the given requirements file
+    and install gulp dependencies.
+    """
+    require('env_name', 'site_dir')
+
+    requirements = env.env_name if env.env_name != 'vagrant' else 'devel'
+    path = os.path.realpath(os.path.join(
+        env.site_dir, 'requirements', '{0}.txt'.format(requirements)))
+
+    with virtualenv():
+        run('pip install -{0}r {1}'.format('U' if upgrade else '', path))
 
 
 @task
