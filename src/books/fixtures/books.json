@@ -1,0 +1,59 @@
+[
+{
+    "fields": {
+        "category": 1,
+        "published_date": "2016-02-02",
+        "public_id": "0qit2jUUmzoG",
+        "description": "Ender's Game is a 1985 military science fiction novel by American author Orson Scott Card. Set in Earth's future, the novel presents an imperiled mankind after two conflicts with the 'buggers', an insectoid alien species. In preparation for an anticipated third invasion, children, including the novel's protagonist, Ender Wiggin, are trained from a very young age through increasingly difficult games including some in zero gravity, where Ender's tactical genius is revealed",
+        "title": "Ender's Game",
+        "is_active": true,
+        "price": "10.50",
+        "format": 1,
+        "cover": "",
+        "archive": "",
+        "last_modified": "2016-02-02T02:51:06.247Z",
+        "created_date": "2016-02-02T02:51:06.247Z",
+        "thumbnail": ""
+    },
+    "model": "books.book",
+    "pk": 1
+},
+{
+    "fields": {
+        "category": 1,
+        "published_date": "2016-02-02",
+        "public_id": "R21PghrnS9nJ",
+        "description": "The Hunger Games is a series of three adventure novels written by the American author Suzanne Collins. The series is set in The Hunger Games universe, and follows young characters Katniss Everdeen and Peeta Mellark.",
+        "title": "The Hunger Games",
+        "is_active": true,
+        "price": "10.50",
+        "format": 1,
+        "cover": "",
+        "archive": "",
+        "last_modified": "2016-02-02T02:51:19.061Z",
+        "created_date": "2016-02-02T02:51:19.061Z",
+        "thumbnail": ""
+    },
+    "model": "books.book",
+    "pk": 2
+},
+{
+    "fields": {
+        "category": 11,
+        "published_date": "2016-02-02",
+        "public_id": "xG5RPXY2nHa9",
+        "description": "Game of Thrones is an American fantasy drama television series created by showrunners David Benioff and D. B. Weiss. It is an adaptation of A Song of Ice and Fire, George R. R. Martin's series of fantasy novels, the first of which is titled A Game of Thrones",
+        "title": "Game of thrones",
+        "is_active": true,
+        "price": "10.50",
+        "format": 1,
+        "cover": "",
+        "archive": "",
+        "last_modified": "2016-02-02T02:55:57.868Z",
+        "created_date": "2016-02-02T02:51:30.879Z",
+        "thumbnail": ""
+    },
+    "model": "books.book",
+    "pk": 3
+}
+]

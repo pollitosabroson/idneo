@@ -1,0 +1,142 @@
+[
+{
+    "fields": {
+        "last_modified": "2016-02-02T02:48:58.407Z",
+        "public_id": "6NpYDWi4jFVP",
+        "name": "arte",
+        "created_date": "2016-02-02T02:48:58.407Z"
+    },
+    "model": "catalogs.category",
+    "pk": 1
+},
+{
+    "fields": {
+        "last_modified": "2016-02-02T02:48:58.410Z",
+        "public_id": "82WvONHtk1L6",
+        "name": "biografs y memorias",
+        "created_date": "2016-02-02T02:48:58.410Z"
+    },
+    "model": "catalogs.category",
+    "pk": 2
+},
+{
+    "fields": {
+        "last_modified": "2016-02-02T02:48:58.411Z",
+        "public_id": "pFduFp0bSxvc",
+        "name": "cuerpo",
+        "created_date": "2016-02-02T02:48:58.411Z"
+    },
+    "model": "catalogs.category",
+    "pk": 3
+},
+{
+    "fields": {
+        "last_modified": "2016-02-02T02:48:58.413Z",
+        "public_id": "D6oiE69XeTUV",
+        "name": "alma y espirit",
+        "created_date": "2016-02-02T02:48:58.413Z"
+    },
+    "model": "catalogs.category",
+    "pk": 4
+},
+{
+    "fields": {
+        "last_modified": "2016-02-02T02:48:58.415Z",
+        "public_id": "BbNMFXCbvITE",
+        "name": "negocios y finanzas",
+        "created_date": "2016-02-02T02:48:58.415Z"
+    },
+    "model": "catalogs.category",
+    "pk": 5
+},
+{
+    "fields": {
+        "last_modified": "2016-02-02T02:48:58.417Z",
+        "public_id": "q0d3XqNrFMbz",
+        "name": "licenciatura y profesionistas",
+        "created_date": "2016-02-02T02:48:58.417Z"
+    },
+    "model": "catalogs.category",
+    "pk": 6
+},
+{
+    "fields": {
+        "last_modified": "2016-02-02T02:48:58.418Z",
+        "public_id": "aQR25SuahAl7",
+        "name": "literatura",
+        "created_date": "2016-02-02T02:48:58.418Z"
+    },
+    "model": "catalogs.category",
+    "pk": 7
+},
+{
+    "fields": {
+        "last_modified": "2016-02-02T02:48:58.419Z",
+        "public_id": "kHQk9WxfN0YR",
+        "name": "novelas graficas",
+        "created_date": "2016-02-02T02:48:58.419Z"
+    },
+    "model": "catalogs.category",
+    "pk": 8
+},
+{
+    "fields": {
+        "last_modified": "2016-02-02T02:48:58.421Z",
+        "public_id": "Rt2jptzGwhpj",
+        "name": "historia",
+        "created_date": "2016-02-02T02:48:58.420Z"
+    },
+    "model": "catalogs.category",
+    "pk": 9
+},
+{
+    "fields": {
+        "last_modified": "2016-02-02T02:48:58.422Z",
+        "public_id": "Lo6L847hVhEN",
+        "name": "poes",
+        "created_date": "2016-02-02T02:48:58.422Z"
+    },
+    "model": "catalogs.category",
+    "pk": 10
+},
+{
+    "fields": {
+        "last_modified": "2016-02-02T02:48:58.423Z",
+        "public_id": "d99LQ1AYC9n0",
+        "name": "lenguaje y referenciaocio",
+        "created_date": "2016-02-02T02:48:58.423Z"
+    },
+    "model": "catalogs.category",
+    "pk": 11
+},
+{
+    "fields": {
+        "last_modified": "2016-02-02T02:48:31.607Z",
+        "public_id": "Mj5bC7C3fQsn",
+        "name": "PDF",
+        "created_date": "2016-02-02T02:48:31.607Z"
+    },
+    "model": "catalogs.type",
+    "pk": 1
+},
+{
+    "fields": {
+        "last_modified": "2016-02-02T02:48:40.506Z",
+        "public_id": "3PGGsdXpozFc",
+        "name": "epub",
+        "created_date": "2016-02-02T02:48:40.506Z"
+    },
+    "model": "catalogs.type",
+    "pk": 2
+},
+{
+    "fields": {
+        "last_modified": "2016-02-02T02:48:44.976Z",
+        "public_id": "JsNHNQRDWWyd",
+        "name": "e-book",
+        "created_date": "2016-02-02T02:48:44.976Z"
+    },
+    "model": "catalogs.type",
+    "pk": 3
+}
+]
