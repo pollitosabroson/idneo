@@ -55,6 +55,7 @@ def resetdb():
     urun('dropdb idneo')
     createdb()
     migrate()
+    loaddummydata()
 
 
 @task
@@ -65,6 +66,7 @@ def bootstrap():
     # Build the DB schema and collect the static files.
     createdb()
     migrate()
+    loaddummydata()
     collectstatic()
 
 
@@ -75,6 +77,12 @@ def loaddata(*args):
     """
     with virtualenv():
         run(join('python manage.py loaddata', arguments(*args)))
+
+
+@task
+def loaddummydata():
+    loaddata('catalogs')
+    loaddata('books')
 
 
 @task
