@@ -1,63 +1,65 @@
-# Luke
-Simple scripts and templates for scaffolding a basic Django project
+# idneo
 
 
 ## Prerequisites
++ [Git](http://git-scm.com/)
 + [Oracle's VirtualBox](https://www.virtualbox.org/)
 + [Vagrant](http://www.vagrantup.com/)
 + [Python](http://www.python.org/)
 + [Fabric](http://www.fabfile.org/)
-+ [fabutils](https://github.com/vinco/fabutils)
 
 
-## Usage
-1. Download the repository's tarball and extract it to your project's directory
+## Configuring your virtual environment
+1. Fork the repo with your Github's user
 
-    ```bash
-    $ mkdir myproject
-    $ cd myproject
-    $ wget https://github.com/vinco/luke/archive/master.tar.gz -O - | tar -xz --strip 1
-    ```
-
-2. Set your project's name in `evironments.json`, `fabfile.py` and `provision/provision.sh`
-
-    ```json
-    # myproject/environments.json
-    {
-        "vagrant": {
-            "django_settings": "myproject.settings.devel",
-        }
-    }
-    ```
-
-    ```python
-    # myproject/fabfile.py
-    ...
-    # urun('createdb luke -l en_US.UTF-8 -E UTF8 -T template0')
-    urun('createdb myproject -l en_US.UTF-8 -E UTF8 -T template0')
-    ... 
-    # urun('dropdb luke')
-    urun('dropdb myproject')
-    ...
-    ```
+2. Clone your fork
 
     ```bash
-    # myproject/provision/provision.sh
-    ...
-    # PROJECT_NAME=luke
-    PROJECT_NAME=myproject
-    ...
+    $ git clone --recursive git@github.com:{ your username }/idneo.git
     ```
 
 3. Create the virtual machine
 
     ```bash
+    $ cd idneo
     $ vagrant up
+    ```
+
+4. Build the environment inside the virtual machine
+
+    ```bash
     $ fab environment:vagrant bootstrap
     ```
 
-4. Init your repository
+5. Run the development server
 
-    ```bash
-    $ git init
     ```
+    $ fab environment:vagrant runserver
+    ```
+
+6. Open your web browser and check the project at `127.0.0.1:8000`
+
+
+## Useful fabric commands
+
+### resetdb
+Drop and rebuild a fresh database instance for the project.
+```bash
+$ fab environment:vagrant resetdb
+```
+
+### pip_install \[upgrade=boolean\]
+Install the Python dependencies for the project specified in the proper requirements file for the given environment.
+```bash
+# Installing dependencies
+$ fab environment:vagrant pip_install
+
+# Install and upgrading dependencies
+$fab environment:vagrant pip_install:upgrade=True
+```
+
+### runserver
+Run the development server inside the virtual machine.
+```bash
+$ fab environment:vagrant runserver
+```
