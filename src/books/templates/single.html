@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+	<div class="thumbnail">
+        <img class="img-responsive" src="{{ book.thumbnail_url }}" alt="">
+        <div class="caption-full">
+        
+            <h4 class="pull-right">${{ book.price }}</h4>
+            <h4><a href="#">{{ book.title }}</a>
+            </h4>
+            <p>{{ book.description }}</p>
+        </div>
+    </div>
+{% endblock content %}
