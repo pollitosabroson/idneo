@@ -124,4 +124,4 @@ class Book(BaseModel):
             return settings.STATIC_URL + 'img/book-red.jpg'
 
     def __unicode__(self):
-        return '%s' % self.book.title
+        return '%s' % self.title
